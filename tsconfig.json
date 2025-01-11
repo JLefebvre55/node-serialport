@@ -2,6 +2,14 @@
   "extends": "@tsconfig/node18/tsconfig.json",
   "compilerOptions": {
     "baseUrl": ".",
+    "target": "esnext",
+    "lib": ["esnext"],
+    "strict": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "skipLibCheck": true,
+    "declaration": true,
     "paths": {
       "@serialport/*": ["packages/*/lib"],
       "serialport": ["packages/serialport/lib"]
